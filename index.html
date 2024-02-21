@@ -11,27 +11,71 @@
 </head>
 <body>
      <section class="wrapper">
-        <div class="input-class">   
+        <div class="task-input">   
            <i class="fa-solid fa-bars"></i>
            <label for="input"></label>
            <input id="input" placeholder="Enter Your Task" type="text"/>
         </div>
         <div class="controls">
             <div class="filter">
-                <span id="all">All<i class="fa-solid fa-reply-all"></i></span>
-                <span id="pending">Pending<i class="fa-solid fa-spinner"></i></span>
-                <span id="completed">Completed<i class="fa-solid fa-list"></i></span>
+                <span id="all" class="active"><i class="fa-solid fa-reply-all"></i>All</span>
+                <span id="pending"><i class="fa-solid fa-spinner"></i>Pending</span>
+                <span id="completed"><i class="fa-solid fa-list"></i>Completed</span>
             </div>
            <button class="clear-btn">Clear-btn</button>
          </div>
          <ul class="task-box">
             <li class="task">
-                <label for="1"></label>
+                <label for="1">
                 <input type="checkbox" id="1">
                 <p>Renew gym membership</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <ul class="task-menu">
+                        <li><i class="fa-solid fa-pen"></i>Edit</li>
+                        <li><i class="fa-solid fa-trash"></i>Delete</li>
+                    </ul>
+                </div>
             </li>
-
+            <li class="task">
+                <label for="1">
+                <input type="checkbox" id="1">
+                <p>Write a blog for a programiing language</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </li>
+            <li class="task">
+                <label for="1">
+                <input type="checkbox" id="1">
+                <p>Dicuss project with the team</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </li>
+            <li class="task">
+                <label for="1"> 
+                <input type="checkbox" id="1">
+                <p>check the cable tv</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </li>
+            <li class="task">
+                <label for="1">      
+                <input type="checkbox" id="1">
+                <p>talk to queen my beautiful wife</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </li>
          </ul>
-         </section>
+     </section>
+     <script src="scriptjs"></script>
 </body>
 </html>     
