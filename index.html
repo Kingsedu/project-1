@@ -10,54 +10,28 @@
     <title>Doing a Todo-List Using LocalStoage</title>
 </head>
 <body>
-     <section>
-        <div>                                               <label for="input"></label>
+     <section class="wrapper">
+        <div class="input-class">   
            <i class="fa-solid fa-bars"></i>
-           <input id="input" placeholder="Enter Your Task" />
-           <button>Add Task</button>
+           <label for="input"></label>
+           <input id="input" placeholder="Enter Your Task" type="text"/>
         </div>
-        <div>
-            <span>All<i class="fa-solid fa-reply-all"></i></span>
-            <span>Pending<i class="fa-solid fa-spinner"></i></span>
-            <span>Completed<i class="fa-solid fa-list"></i></span>
-    
-        </div>
-        <div>
-           <ul>
-            <li>
-                Taking out the dogs for a walk
-                <span><i class="fa-solid fa-expand"></i></span>
-                <div>
-                    <p>Delete<i class="fa-solid fa-trash"></i></p>
-                    <p>Edit<i class="fa-solid fa-pen"></i></p>
-                </div>
+        <div class="controls">
+            <div class="filter">
+                <span id="all">All<i class="fa-solid fa-reply-all"></i></span>
+                <span id="pending">Pending<i class="fa-solid fa-spinner"></i></span>
+                <span id="completed">Completed<i class="fa-solid fa-list"></i></span>
+            </div>
+           <button class="clear-btn">Clear-btn</button>
+         </div>
+         <ul class="task-box">
+            <li class="task">
+                <label for="1"></label>
+                <input type="checkbox" id="1">
+                <p>Renew gym membership</p>
             </li>
-            <li>
-                taking out the trash
-                <span><i class="fa-solid fa-expand"></i></span>
-                <div>
-                    <p>Delete<i class="fa-solid fa-trash"></i></p>
-                    <p>Edit<i class="fa-solid fa-pen"></i></p>
-                </div>
-            </li>
-            <li>
-                Practising how to be a good developer
-                <span><i class="fa-solid fa-expand"></i></span>
-                <div>
-                    <p>Delete<i class="fa-solid fa-trash"></i></p>
-                    <p>Edit<i class="fa-solid fa-pen"></i></p>
-                </div>
-            </li>
-            <li>
-                Trying to be a better person Spiritual
-                <span><i class="fa-solid fa-expand"></i></span>
-                <div>
-                    <p>Delete<i class="fa-solid fa-trash"></i></p>
-                    <p>Edit<i class="fa-solid fa-pen"></i></p>
-                </div>
-            </li>
-           </ul> 
-        </div>
-     </section>
+
+         </ul>
+         </section>
 </body>
 </html>     
